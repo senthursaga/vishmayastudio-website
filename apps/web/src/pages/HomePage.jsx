@@ -8,8 +8,8 @@ import { HERO_IMG, DETAIL_IMG, GALLERY } from '@/lib/gallery';
 const HomePage = () => (
   <>
     <Helmet>
-      <title>Vishmaya Studio | Where Pokémon Cards Become Immersive Artwork</title>
-      <meta name="description" content="Vishmaya Studio creates premium extended binder artwork designed to complement your genuine collectible cards. UK-based custom fan art for collectors." />
+      <title>Vishmaya Studio | Every Card Has a Story We Continue It</title>
+      <meta name="description" content="We create premium extended artwork that seamlessly continues beyond the borders of genuine Pokémon cards, transforming every binder page into an immersive display worthy of a collector." />
     </Helmet>
 
     <section className="relative min-h-[100dvh] flex items-center">
@@ -20,19 +20,19 @@ const HomePage = () => (
       </div>
       <div className="relative max-w-[90rem] mx-auto px-5 w-full">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }} className="max-w-2xl">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-6">UK Creative Studio · Collector Art</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-6">PREMIUM BINDER ART • MADE IN THE UK</p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05]">
-            Where Pokémon Cards Become <span className="gold-text">Immersive Artwork.</span>
+            Every Card Has a Story <span className="gold-text">We Continue It.</span>
           </h1>
           <p className="mt-8 text-lg text-muted-foreground max-w-xl">
-            Vishmaya Studio crafts premium extended artwork designed to complement genuine collectible cards. The original card is not included — you insert your own authentic card into the completed binder page.
+            We create premium extended artwork that seamlessly continues beyond the borders of genuine Pokémon cards, transforming every binder page into an immersive display worthy of a collector.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/shop" className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 text-xs tracking-[0.2em] uppercase hover:bg-primary/90 transition">
-              Explore the Shop <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              Explore the Gallery <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link to="/custom" className="inline-flex items-center gap-2 border hairline px-8 py-4 text-xs tracking-[0.2em] uppercase text-foreground hover:border-primary hover:text-primary transition">
-              Commission Custom
+              Start a Custom Project
             </Link>
           </div>
         </motion.div>
