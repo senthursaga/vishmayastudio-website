@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 4%;
+  --foreground: 40 30% 96%;
+  --card: 0 0% 7%;
+  --card-foreground: 40 30% 96%;
+  --popover: 0 0% 6%;
+  --popover-foreground: 40 30% 96%;
+  --primary: 43 62% 56%;
+  --primary-foreground: 0 0% 6%;
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 40 30% 96%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 40 8% 62%;
+  --accent: 43 62% 56%;
+  --accent-foreground: 0 0% 6%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 43 30% 20%;
+  --input: 43 20% 18%;
+  --ring: 43 62% 56%;
+  --radius: 0.25rem;
+}
+
+* { border-color: hsl(var(--border)); }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  overflow-x: clip;
+}
+
+h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
+
+.gold-text {
+  background: linear-gradient(120deg, #E7C873, #F6E7B4, #C79A3D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-card {
+  background: rgba(20, 18, 14, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border));
+}
+
+.hairline { border-color: hsl(var(--border)); }
+
+.gold-line { height: 1px; background: linear-gradient(90deg, transparent, #C79A3D, transparent); }
+
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #3a3020; border-radius: 4px; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px);} to { opacity:1; transform:none;} }
+.animate-fadeUp { animation: fadeUp 0.8s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fadeUp { animation: none; }
+}
+
+.prose-invert :where(p){ color: hsl(var(--muted-foreground)); }
